@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Signup">
 
     <LinearLayout
         android:layout_width="348dp"
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:layout_gravity="center"
-            android:text="LOG IN"
+            android:text="SIGN UP"
             android:textSize="50dp"
             android:textStyle="bold" />
 
@@ -37,8 +37,8 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/inputdesign"
             android:drawableLeft="@drawable/iconperson"
-            android:hint="username"
-            android:padding="10dp"/>
+            android:hint="Username"
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/Password"
@@ -51,13 +51,24 @@
             android:hint="Password"
             android:padding="10dp"/>
 
+        <EditText
+            android:id="@+id/CPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputdesign"
+            android:drawableLeft="@drawable/iconpass"
+            android:hint="ConfirmPassword"
+            android:padding="10dp" />
+
         <Button
-            android:id="@+id/Login"
+            android:id="@+id/Signup"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:text="Log In" />
+            android:text="Sign Up" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -68,19 +79,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an Account?"
+                android:text="Already have an Account?"
                 android:textSize="15dp"
                 android:layout_marginTop="12dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/signup"
+                android:id="@+id/login"
                 style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:text="Sign Up"
+                android:text="Log In"
                 android:textSize="15dp"/>
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>
