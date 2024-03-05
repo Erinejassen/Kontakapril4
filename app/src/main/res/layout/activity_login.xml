@@ -37,7 +37,7 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/inputdesign"
             android:drawableLeft="@drawable/iconperson"
-            android:hint="username"
+            android:hint="Username"
             android:padding="10dp"/>
 
         <EditText
