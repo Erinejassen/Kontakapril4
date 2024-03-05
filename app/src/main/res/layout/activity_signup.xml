@@ -64,10 +64,11 @@
 
         <Button
             android:id="@+id/Signup"
-            android:layout_width="150dp"
+            android:layout_width="168dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
+            android:textSize="20dp"
             android:text="Sign Up" />
 
         <LinearLayout
@@ -87,12 +88,13 @@
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
                 android:layout_gravity="center"
-                android:text=" Log In"
                 android:textColor="#0000FF"
                 android:paddingTop="12dp"
-                android:textSize="15dp"/>
+                android:clickable="true"
+                android:text=" Log In"
+                android:textSize="15dp" />
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
