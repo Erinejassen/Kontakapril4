@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/kontaktbg"
-        android:layout_width="373dp"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
         android:layout_gravity="center"
         app:srcCompat="@drawable/kontaktbg"
         tools:layout_editor_absoluteX="0dp"
