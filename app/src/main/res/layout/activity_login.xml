@@ -62,6 +62,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:text="Log In"
+            android:onClick="login"
             android:backgroundTint="#A800DE"
             android:textSize="20dp" />
 

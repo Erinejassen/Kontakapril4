@@ -74,6 +74,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="#A800DE"
+            android:onClick="signup"
             android:textSize="20dp"
             android:text="Sign Up" />
 
