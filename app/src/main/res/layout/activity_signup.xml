@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="372dp"
+            android:layout_height="298dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/kontaktbg" />
 
@@ -33,9 +33,9 @@
         <EditText
             android:id="@+id/Email"
             android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_height=".3in"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/inputdesign"
             android:drawableLeft="@drawable/iconperson"
             android:hint="Username"
@@ -44,7 +44,7 @@
         <EditText
             android:id="@+id/Password"
             android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_height=".3in"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/inputdesign"
@@ -55,7 +55,7 @@
         <EditText
             android:id="@+id/CPassword"
             android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_height=".3in"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/inputdesign"
@@ -65,10 +65,10 @@
 
         <Button
             android:id="@+id/Signup"
-            android:layout_width="168dp"
-            android:layout_height="50dp"
+            android:layout_width="200dp"
+            android:layout_height=".4in"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:textSize="20dp"
             android:text="Sign Up" />
 
@@ -76,14 +76,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:padding="5px"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:text="Already have an Account?"
-                android:textSize="15dp"
-                android:layout_marginTop="12dp"/>
+                android:textSize="15dp" />
 
             <TextView
                 android:id="@+id/login"
