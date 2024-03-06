@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:padding="20dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="298dp"
+            android:layout_height="277dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/kontaktbg" />
 
@@ -27,6 +27,7 @@
             android:layout_height="56dp"
             android:layout_gravity="center"
             android:text="SIGN UP"
+            android:textColor="@color/black"
             android:textSize="50dp"
             android:textStyle="bold" />
 
@@ -38,6 +39,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/inputdesign"
             android:drawableLeft="@drawable/iconperson"
+            android:textColor="@color/black"
             android:hint="Username"
             android:padding="10dp" />
 
@@ -49,6 +51,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/inputdesign"
             android:drawableLeft="@drawable/iconpass"
+            android:textColor="@color/black"
             android:hint="Password"
             android:padding="10dp"/>
 
@@ -60,6 +63,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/inputdesign"
             android:drawableLeft="@drawable/iconpass"
+            android:textColor="@color/black"
             android:hint="ConfirmPassword"
             android:padding="10dp" />
 
@@ -69,6 +73,7 @@
             android:layout_height=".4in"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
+            android:backgroundTint="#A800DE"
             android:textSize="20dp"
             android:text="Sign Up" />
 

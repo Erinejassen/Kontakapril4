@@ -6,15 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MainActivity"
-    android:layout_margin="20dp">
+    android:padding="20dp">
 
     <ImageView
         android:id="@+id/kontaktbg"
         android:layout_width="match_parent"
-        android:layout_height="3in"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/kontaktbg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="127dp" />
+        app:srcCompat="@drawable/kontaktbg"/>
 
 </LinearLayout>
