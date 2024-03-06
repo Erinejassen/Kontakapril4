@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -22,5 +23,10 @@ public class Login extends AppCompatActivity {
                 startActivity(new Intent(Login.this, Signup.class));
             }
         });
+    }
+    public void login(View view){
+        Intent signup = new Intent(this, Homeui.class);
+        Toast.makeText(getApplicationContext(), "Logged In!",Toast.LENGTH_SHORT).show();
+        startActivity(signup);
     }
 }
