@@ -57,8 +57,6 @@ public class Homeui extends AppCompatActivity {
             }
         });
 
-
-
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment, chatsfragment).commit();
 
