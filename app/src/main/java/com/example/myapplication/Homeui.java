@@ -1,7 +1,9 @@
 package com.example.myapplication;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -11,6 +13,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -26,6 +29,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class Homeui extends AppCompatActivity {
 
+    Button btncam;
     BottomNavigationView bottomNavigationView;
 
     Chatsfragment chatsfragment = new Chatsfragment();
@@ -33,10 +37,27 @@ public class Homeui extends AppCompatActivity {
     Groupsfragment groupsfragment = new Groupsfragment();
     Requestfragment requestfragment = new Requestfragment();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homeui);
+
+        btncam = (Button) findViewById(R.id.btncam);
+        btncam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent cam = new Intent();
+                    cam.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivity(cam);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
+
+
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment, chatsfragment).commit();
@@ -60,6 +81,7 @@ public class Homeui extends AppCompatActivity {
                 }
                 return false;
             }
+
         });
     }
 }
